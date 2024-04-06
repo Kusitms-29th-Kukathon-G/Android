@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/navigation_home">
+    app:startDestination="@id/onBoardingFragment">
 
     <fragment
         android:id="@+id/navigation_home"
@@ -20,4 +20,45 @@
         android:name="com.example.kukathon.MypageFragment"
         android:label="fragment_mypage"
         tools:layout="@layout/fragment_mypage" />
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.example.kukathon.onBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding">
+        <action
+            android:id="@+id/action_onBoardingFragment_to_termsFragment"
+            app:destination="@id/termsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputStep1Fragment"
+        android:name="com.example.kukathon.input.InputStep1Fragment"
+        android:label="fragment_input_step1"
+        tools:layout="@layout/fragment_input_step1">
+        <action
+            android:id="@+id/action_inputStep1Fragment_to_inputStep2Fragment"
+            app:destination="@id/inputStep2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputStep2Fragment"
+        android:name="com.example.kukathon.input.InputStep2Fragment"
+        android:label="fragment_input_step2"
+        tools:layout="@layout/fragment_input_step2">
+        <action
+            android:id="@+id/action_inputStep2Fragment_to_inputStep3Fragment"
+            app:destination="@id/inputStep3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputStep3Fragment"
+        android:name="com.example.kukathon.input.InputStep3Fragment"
+        android:label="fragment_input_step3"
+        tools:layout="@layout/fragment_input_step3" />
+    <fragment
+        android:id="@+id/termsFragment"
+        android:name="com.example.kukathon.TermsFragment"
+        android:label="fragment_terms"
+        tools:layout="@layout/fragment_terms">
+        <action
+            android:id="@+id/action_termsFragment_to_inputStep1Fragment"
+            app:destination="@id/inputStep1Fragment" />
+    </fragment>
 </navigation>
