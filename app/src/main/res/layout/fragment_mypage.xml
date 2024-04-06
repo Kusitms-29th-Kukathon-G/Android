@@ -7,26 +7,111 @@
     tools:context=".MypageFragment">
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/mypage_toolbar"
+        android:id="@+id/terms_toolbar"
         android:layout_width="0dp"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mypage_toolbar">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/fourth_fragment_label" />
-    </androidx.core.widget.NestedScrollView>
+            android:id="@+id/mypage_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/pretendard_bold"
+            android:text="마이페이지"
+            android:textColor="@color/B_800"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/terms_toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <TextView
+        android:id="@+id/tv_mypage_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:fontFamily="@font/pretendard_bold"
+        android:text="한아름송이"
+        android:textColor="#8EA7FF"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:fontFamily="@font/pretendard_bold"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <TextView
+        android:id="@+id/tv_mypage_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:fontFamily="@font/pretendard_bold"
+        android:text="님의 기록공간"
+        android:textColor="@color/B_700"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:fontFamily="@font/pretendard_bold"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <TextView
+        android:id="@+id/tv_mypage_emptyreport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="184dp"
+        android:fontFamily="@font/pretendard_regular"
+        android:text="아직 기록을 하지 않았어요!"
+        android:textColor="#9CA3AF"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:fontFamily="@font/pretendard_regular"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <Button
+        android:id="@+id/button_rookie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="#95ACFF"
+        android:drawableLeft="@drawable/ic_waving"
+        android:fontFamily="@font/pretendard_bold"
+        android:text="루키의 슈퍼루키"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tv_mypage_tabview"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="238dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/mypage_tab_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="캘린더" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/mypage_tab_dream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="꿈" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/mypage_tab_diary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일기" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/mypage_tab_memo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="메모" />
+    </com.google.android.material.tabs.TabLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

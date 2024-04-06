@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="@drawable/gradient_on_boarding"
+
+    tools:context=".onBoardingFragment">
+
+
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+
+        android:id="@+id/result_toolbar"
+
+        android:layout_width="0dp"
+
+        android:layout_height="?attr/actionBarSize"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:navigationIcon="@drawable/mobile_ic_back">
+
+
+        <TextView
+
+            android:id="@+id/result_title"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="20dp"
+
+            android:fontFamily="@font/pretendard_bold"
+
+            android:text="도파민 연구 보고서"
+
+            android:textColor="@color/white"
+
+            android:textSize="16sp"
+
+            app:layout_constraintBottom_toBottomOf="@id/result_toolbar"
+
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <TextView
+
+        android:id="@+id/tv_result_user"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="22dp"
+
+        android:fontFamily="@font/pretendard_bold"
+
+        android:text="김김김"
+
+        android:textColor="#8EA7FF"
+
+        android:textSize="20dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        tools:fontFamily="@font/pretendard_bold"
+
+        tools:layout_editor_absoluteY="97dp" />
+
+
+    <TextView
+
+        android:id="@+id/tv_result_title"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="72dp"
+
+        android:fontFamily="@font/pretendard_bold"
+
+        android:text="님의"
+
+        android:textColor="@color/white"
+
+        android:textSize="20dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        tools:fontFamily="@font/pretendard_bold"
+
+        tools:layout_editor_absoluteY="97dp" />
+
+    <ImageView
+
+        android:id="@+id/ellipse1"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="150dp"
+
+        android:background="@drawable/img_ellipse_2745"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+
+        android:id="@+id/tv_result_title2"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="22dp"
+
+        android:fontFamily="@font/pretendard_bold"
+
+        android:text="도파민 연구 일지에요!"
+
+        android:textColor="@color/B_50"
+
+        android:textSize="24sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/tv_result_user" />
+
+
+    <TextView
+
+        android:id="@+id/tv_result_title3"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/pretendard_regular"
+
+        android:text="4월 1주차"
+
+        android:textColor="#8EA7FF"
+
+        android:textSize="14dp"
+
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <Button
+
+        android:id="@+id/tv_result_button"
+
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginHorizontal="20dp"
+
+        android:layout_marginBottom="24dp"
+
+        android:background="@drawable/bg_btn_next_selector"
+
+        android:fontFamily="@font/pretendard_medium"
+
+        android:gravity="center"
+
+        android:text="도파민 조절 시작하기"
+
+        android:textColor="@color/white"
+
+        android:textSize="16sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_diary"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="256dp"
+        android:layout_height="240dp"
+        android:src="@drawable/img_graph"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.413" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="174dp"
+        android:layout_height="160dp"
+        android:src="@drawable/img_bluebox"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="472dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="174dp"
+        android:layout_height="160dp"
+        android:src="@drawable/img_redbox"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="472dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
