@@ -4,21 +4,21 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home"
-        android:title="@string/title_1" />
+        android:title="피드" />
 
     <item
         android:id="@+id/navigation_fitness"
         android:icon="@drawable/ic_fitness"
-        android:title="@string/title_2" />
+        android:title="그룹" />
 
     <item
         android:id="@+id/navigation_bookmark"
         android:icon="@drawable/ic_bookmark"
-        android:title="@string/title_3" />
+        android:title="리포트" />
 
     <item
         android:id="@+id/navigation_mypage"
         android:icon="@drawable/ic_mypage"
-        android:title="@string/title_4" />
+        android:title="My" />
 
 </menu>
