@@ -22,10 +22,10 @@ class onBoardingFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        nextButton()
+        loginButton()
     }
 
-    private fun nextButton() {
+    private fun loginButton() {
         binding.btnLogin.setOnClickListener {
             findNavController().navigate(R.id.action_onBoardingFragment_to_termsFragment)
         }
