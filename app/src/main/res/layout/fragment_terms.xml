@@ -17,7 +17,7 @@
         app:navigationIcon="@drawable/mobile_ic_back">
 
         <TextView
-            android:id="@+id/terms_title"
+            android:id="@+id/mypage_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
