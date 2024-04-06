@@ -76,5 +76,18 @@
     <fragment
         android:id="@+id/studyResultFragment"
         android:name="com.example.kukathon.StudyResultFragment"
-        android:label="StudyResultFragment" />
+        android:label="StudyResultFragment" >
+        <action
+            android:id="@+id/action_studyResultFragment_to_makeTodoFragment"
+            app:destination="@id/makeTodoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/makeTodoFragment"
+        android:name="com.example.kukathon.MakeTodoFragment"
+        android:label="fragment_make_todo"
+        tools:layout="@layout/fragment_make_todo" >
+        <action
+            android:id="@+id/action_makeTodoFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
 </navigation>

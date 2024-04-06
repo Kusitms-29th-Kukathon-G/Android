@@ -15,8 +15,6 @@
     tools:context=".onBoardingFragment">
 
 
-
-
     <com.google.android.material.appbar.MaterialToolbar
 
         android:id="@+id/result_toolbar"
@@ -151,21 +149,13 @@
 
 
     <TextView
-
         android:id="@+id/tv_result_title3"
-
         android:layout_width="wrap_content"
-
         android:layout_height="wrap_content"
-
         android:layout_marginStart="22dp"
-
         android:fontFamily="@font/pretendard_regular"
-
         android:text="4월 1주차"
-
         android:textColor="#8EA7FF"
-
         android:textSize="14dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_result_title2" />
@@ -223,18 +213,21 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="172dp"
-        android:layout_height="158dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="20dp"
         android:src="@drawable/img_bluebox"
         app:layout_constraintBottom_toTopOf="@id/tv_result_button"
-        tools:layout_editor_absoluteX="22dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="174dp"
-        android:layout_height="160dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
         android:layout_marginBottom="20dp"
         android:src="@drawable/img_redbox"
         app:layout_constraintBottom_toTopOf="@id/tv_result_button"

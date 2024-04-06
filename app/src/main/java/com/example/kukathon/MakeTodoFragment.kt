@@ -6,19 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.kukathon.databinding.FragmentOnBoardingBinding
-import com.example.kukathon.databinding.FragmentStudyResultBinding
+import com.example.kukathon.databinding.FragmentHomeBinding
+import com.example.kukathon.databinding.FragmentMakeTodoBinding
 
-class StudyResultFragment : Fragment() {
 
-    private var _binding: FragmentStudyResultBinding? = null
+class MakeTodoFragment : Fragment() {
+    private var _binding: FragmentMakeTodoBinding? = null
     private val binding get() = _binding!!
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        _binding = FragmentStudyResultBinding.inflate(inflater, container, false)
+        _binding = FragmentMakeTodoBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -27,14 +27,12 @@ class StudyResultFragment : Fragment() {
         nextButton()
     }
     private fun nextButton() {
-        binding.tvResultButton.setOnClickListener {
-            findNavController().navigate(R.id.action_studyResultFragment_to_makeTodoFragment)
+        binding.btnNext.setOnClickListener {
+            findNavController().navigate(R.id.action_makeTodoFragment_to_navigation_home)
         }
     }
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
-
-
 }

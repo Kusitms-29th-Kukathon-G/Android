@@ -10,10 +10,10 @@
     <string name="previous">Previous</string>
     <string name="button">test</string>
     <string name="first_fragment">first_fragment</string>
-    <string name="title_1">title1</string>
-    <string name="title_2">title2</string>
-    <string name="title_3">title3</string>
-    <string name="title_4">title4</string>
+    <string name="title_1">홈</string>
+    <string name="title_2">그룹연구</string>
+    <string name="title_3">연구일지</string>
+    <string name="title_4">마이페이지</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
     <!--todolab-->
@@ -66,6 +66,20 @@
     <string name="한세번">1~3번</string>
     <string name="하지않음">하지 않음</string>
     <string name="제출하기">제출하기</string>
+    <string name="음식">음식</string>
+    <string name="주차">2024년 4월 1주차</string>
+    <string name="오늘의_도파민_연구일지">오늘의 도파민 연구일지</string>
+    <string name="디저트_먹지_않기">디저트 먹지 않기</string>
+    <string name="도파민_연구_보고서">도파민 연구 보고서</string>
+    <string name="삶의_질_향상을_위한">삶의 질 향상을 위한,</string>
+    <string name="도파민_조절_리스트_만들기">도파민 조절 리스트 만들기</string>
+    <string name="food1">하루에 일반식 2번 먹기</string>
+    <string name="food2">정크푸드 먹지 않기</string>
+    <string name="food3">밥 먹고 디저트 생략하기</string>
+    <string name="food4">끼니를 똑같은 시간대에 유지하기</string>
+    <string name="food5">기존 식사 시간보다 15분 천천히 먹기</string>
+    <string name="도파민_조절_준비_완료하기">도파민 조절 준비 완료하기</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

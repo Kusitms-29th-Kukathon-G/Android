@@ -29,12 +29,12 @@ class MainActivity : AppCompatActivity() {
             binding.bnv.visibility = when (destination.id) {
                 R.id.onBoardingFragment -> View.GONE
                 R.id.termsFragment -> View.GONE
+                R.id.makeTodoFragment -> View.GONE
                 R.id.inputStep1Fragment -> View.GONE
                 R.id.inputStep2Fragment -> View.GONE
                 R.id.inputStep3Fragment -> View.GONE
                 R.id.studyResultFragment -> View.GONE
                 R.id.signUpFragment -> View.GONE
-
                 else -> View.VISIBLE
             }
         }
