@@ -51,14 +51,30 @@
         android:id="@+id/inputStep3Fragment"
         android:name="com.example.kukathon.input.InputStep3Fragment"
         android:label="fragment_input_step3"
-        tools:layout="@layout/fragment_input_step3" />
+        tools:layout="@layout/fragment_input_step3" >
+        <action
+            android:id="@+id/action_inputStep3Fragment_to_studyResultFragment"
+            app:destination="@id/studyResultFragment" />
+    </fragment>
     <fragment
         android:id="@+id/termsFragment"
         android:name="com.example.kukathon.TermsFragment"
         android:label="fragment_terms"
         tools:layout="@layout/fragment_terms">
         <action
-            android:id="@+id/action_termsFragment_to_inputStep1Fragment"
+            android:id="@+id/action_termsFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.kukathon.SignUpFragment"
+        android:label="SignUpFragment" >
+        <action
+            android:id="@+id/action_signUpFragment_to_inputStep1Fragment"
             app:destination="@id/inputStep1Fragment" />
     </fragment>
+    <fragment
+        android:id="@+id/studyResultFragment"
+        android:name="com.example.kukathon.StudyResultFragment"
+        android:label="StudyResultFragment" />
 </navigation>

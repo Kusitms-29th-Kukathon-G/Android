@@ -30,7 +30,7 @@ class TermsFragment : Fragment() {
 
     private fun nextButton() {
         binding.btnNext.setOnClickListener {
-            findNavController().navigate(R.id.action_termsFragment_to_inputStep1Fragment)
+            findNavController().navigate(R.id.action_termsFragment_to_signUpFragment)
         }
     }
 }

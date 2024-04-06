@@ -33,6 +33,9 @@ class MainActivity : AppCompatActivity() {
                 R.id.inputStep1Fragment -> View.GONE
                 R.id.inputStep2Fragment -> View.GONE
                 R.id.inputStep3Fragment -> View.GONE
+                R.id.studyResultFragment -> View.GONE
+                R.id.signUpFragment -> View.GONE
+
                 else -> View.VISIBLE
             }
         }
