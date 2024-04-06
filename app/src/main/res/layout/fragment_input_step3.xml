@@ -291,7 +291,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_sign_up_next"
+        android:id="@+id/btn_next"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -299,7 +299,7 @@
         android:background="@drawable/bg_btn_next_selector"
         android:fontFamily="@font/pretendard_medium"
         android:gravity="center"
-        android:text="@string/다음"
+        android:text="@string/제출하기"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
