@@ -32,6 +32,7 @@
     <string name="이메일_및_문자_마케팅_수신동의">이메일 및 문자 마케팅 수신동의</string>
     <string name="선택">선택</string>
     <string name="다음">다음</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
