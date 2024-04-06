@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bg_bnv">#191919</color>
+    <color name="primary_100">#DBA7FB</color>
+    <color name="ic_unselect">#2E2E2E</color>
+
 </resources>

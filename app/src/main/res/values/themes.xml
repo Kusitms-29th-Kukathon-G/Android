@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.Kukathon" parent="Base.Theme.Kukathon" />
+    <style name="Theme.Kukathon.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Kukathon.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Kukathon.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
