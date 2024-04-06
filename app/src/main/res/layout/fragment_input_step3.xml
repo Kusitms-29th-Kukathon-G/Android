@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_on_boarding"
+    tools:context=".input.InputStep3Fragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/input_step3_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/mobile_ic_back">
+
+        <TextView
+            android:id="@+id/input_step3_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/pretendard_bold"
+            android:text="@string/나의_도파민_측정하기"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/terms_toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <ImageView
+        android:id="@+id/ellipse1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/img_ellipse_2745"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/png_pencil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_input_step3_title2"
+        app:layout_constraintTop_toBottomOf="@id/input_step3_toolbar" />
+
+    <ImageView
+        android:id="@+id/btn_step1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_input_step1_unable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_step3_toolbar" />
+
+    <ImageView
+        android:id="@+id/btn_step2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_input_step2_unable"
+        app:layout_constraintStart_toEndOf="@id/btn_step1"
+        app:layout_constraintTop_toBottomOf="@id/input_step3_toolbar" />
+
+    <ImageView
+        android:id="@+id/btn_step3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_input_step3_able"
+        app:layout_constraintStart_toEndOf="@id/btn_step2"
+        app:layout_constraintTop_toBottomOf="@id/input_step3_toolbar" />
+
+
+    <TextView
+        android:id="@+id/tv_input_step3_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/pretendard_bold"
+        android:text="@string/거의_다_왔어요"
+        android:textColor="@color/B_50"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_step1" />
+
+    <TextView
+        android:id="@+id/tv_input_step3_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/pretendard_regular"
+        android:text="@string/문항들을_모두_채우면_도파민_연구_일지를_만들어드릴게요"
+        android:textColor="@color/B_400"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_input_step3_title1" />
+
+    <TextView
+        android:id="@+id/tv_input_step2_q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/pretendard_bold"
+        android:text="@string/하루에_커피를_몇_잔_마시나요"
+        android:textColor="@color/B_50"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_input_step3_title2" />
+
+
+    <ImageButton
+        android:id="@+id/btn_q1_a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_btn_dopamine_selector"
+        app:layout_constraintEnd_toStartOf="@id/btn_q1_a2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_input_step2_q1" />
+
+    <TextView
+        android:id="@+id/tv_q1_a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_medium"
+        android:text="@string/세잔이상"
+        android:textColor="@color/B_50"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/tv_q1_a2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_q1_a1" />
+
+    <ImageButton
+        android:id="@+id/btn_q1_a2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_btn_dopamine_selector"
+        app:layout_constraintEnd_toStartOf="@id/btn_q1_a3"
+        app:layout_constraintStart_toEndOf="@id/btn_q1_a1"
+        app:layout_constraintTop_toBottomOf="@id/tv_input_step2_q1" />
+
+    <TextView
+        android:id="@+id/tv_q1_a2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_medium"
+        android:text="@string/한두잔"
+        android:textColor="@color/B_50"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_q1_a2" />
+
+    <ImageButton
+        android:id="@+id/btn_q1_a3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_btn_dopamine_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_q1_a2"
+        app:layout_constraintTop_toBottomOf="@id/tv_input_step2_q1" />
+
+    <TextView
+        android:id="@+id/tv_q1_a3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/pretendard_medium"
+        android:text="@string/마시지_않음"
+        android:textColor="@color/B_50"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_q1_a2"
+        app:layout_constraintTop_toBottomOf="@id/btn_q1_a3" />
+
+
+    <TextView
+        android:id="@+id/tv_input_step2_q2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/pretendard_bold"
+        android:text="@string/일주일에_음주를_몇_번_하시나요"
+        android:textColor="@color/B_50"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_q1_a2" />
+
+    <ImageButton
+        android:id="@+id/btn_q2_a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_btn_dopamine_selector"
+        app:layout_constraintEnd_toStartOf="@id/btn_q2_a2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_input_step2_q2" />
+
+    <TextView
+        android:id="@+id/tv_q2_a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_medium"
+        android:text="@string/다섯시간이상"
+        android:textColor="@color/B_50"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/tv_q2_a2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_q2_a1" />
+
+    <ImageButton
+        android:id="@+id/btn_q2_a2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_btn_dopamine_selector"
+        app:layout_constraintEnd_toStartOf="@id/btn_q2_a3"
+        app:layout_constraintStart_toEndOf="@id/btn_q2_a1"
+        app:layout_constraintTop_toBottomOf="@id/tv_input_step2_q2" />
+
+    <TextView
+        android:id="@+id/tv_q2_a2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_medium"
+        android:text="@string/세다섯시간"
+        android:textColor="@color/B_50"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/tv_q2_a3"
+        app:layout_constraintStart_toEndOf="@id/tv_q2_a1"
+        app:layout_constraintTop_toBottomOf="@id/btn_q2_a2" />
+
+    <ImageButton
+        android:id="@+id/btn_q2_a3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_btn_dopamine_selector"
+        app:layout_constraintEnd_toStartOf="@id/btn_q2_a4"
+        app:layout_constraintStart_toEndOf="@id/btn_q2_a2"
+        app:layout_constraintTop_toBottomOf="@id/tv_input_step2_q2" />
+
+    <TextView
+        android:id="@+id/tv_q2_a3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_medium"
+        android:text="@string/두세시간"
+        android:textColor="@color/B_50"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/tv_q2_a4"
+        app:layout_constraintStart_toEndOf="@id/tv_q2_a2"
+        app:layout_constraintTop_toBottomOf="@id/btn_q2_a3" />
+
+    <ImageButton
+        android:id="@+id/btn_q2_a4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_btn_dopamine_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_q2_a3"
+        app:layout_constraintTop_toBottomOf="@id/tv_input_step2_q2" />
+
+    <TextView
+        android:id="@+id/tv_q2_a4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_medium"
+        android:text="@string/두시간이하"
+        android:textColor="@color/B_50"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_q2_a3"
+        app:layout_constraintTop_toBottomOf="@id/btn_q2_a4" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_btn_next_selector"
+        android:fontFamily="@font/pretendard_medium"
+        android:gravity="center"
+        android:text="@string/제출하기"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
