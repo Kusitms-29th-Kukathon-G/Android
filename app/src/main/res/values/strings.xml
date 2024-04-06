@@ -45,6 +45,15 @@
     <string name="다섯일곱시간">5~7시간</string>
     <string name="세다섯시간">3~5시간</string>
     <string name="세시간이하">3시간 이하</string>
+    <string name="한달_기준_하루_평균_지출이_얼마인가요">한달 기준 하루 평균 지출이 얼마인가요?</string>
+    <string name="하루_평균_게임을_몇_시간_하시나요">하루 평균 게임을 몇 시간 하시나요?</string>
+    <string name="십만원이상">10만원 이상</string>
+    <string name="팔에서십만원">8~10만원</string>
+    <string name="육에서팔만원">6~8만원</string>
+    <string name="오만원이하">5만원 이하</string>
+    <string name="다섯시간이상">5시간 이상</string>
+    <string name="두세시간">2~3시간</string>
+    <string name="두시간이하">2시간 이하</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
