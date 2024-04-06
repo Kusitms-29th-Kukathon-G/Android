@@ -54,6 +54,16 @@
     <string name="다섯시간이상">5시간 이상</string>
     <string name="두세시간">2~3시간</string>
     <string name="두시간이하">2시간 이하</string>
+    <string name="거의_다_왔어요">거의 다 왔어요!</string>
+    <string name="하루에_커피를_몇_잔_마시나요">하루에 커피를 몇 잔 마시나요?</string>
+    <string name="일주일에_음주를_몇_번_하시나요">일주일에 음주를 몇 번 하시나요?</string>
+    <string name="세잔이상">3잔 이상</string>
+    <string name="한두잔">1~2잔</string>
+    <string name="마시지_않음">마시지 않음</string>
+    <string name="다섯번이상">5번 이상</string>
+    <string name="세네번">3~4번</string>
+    <string name="한세번">1~3번</string>
+    <string name="하지않음">하지 않음</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
