@@ -17,7 +17,21 @@
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
     <!--todolab-->
+    <string name="회원가입">회원가입</string>
     <string name="당신만의">당신만의</string>
     <string name="도파민_연구소로">도파민 연구소로</string>
     <string name="초대합니다">초대합니다.</string>
+    <string name="연구소에_입장하기_전">연구소에 입장하기 전,</string>
+    <string name="서비스_이용_약관에">서비스 이용 약관에</string>
+    <string name="동의해주세요">동의해주세요.</string>
+    <string name="약관_전체_동의">약관 전체 동의</string>
+    <string name="선택사항_포함">선택사항 포함</string>
+    <string name="만_14세_이상입니다">만 14세 이상입니다.</string>
+    <string name="필수">필수</string>
+    <string name="이용약관_동의">이용약관 동의</string>
+    <string name="이메일_및_문자_마케팅_수신동의">이메일 및 문자 마케팅 수신동의</string>
+    <string name="선택">선택</string>
+    <string name="다음">다음</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
