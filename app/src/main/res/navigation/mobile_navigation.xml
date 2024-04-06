@@ -15,4 +15,9 @@
         android:name="com.example.kukathon.BookmarkFragment"
         android:label="fragment_bookmark"
         tools:layout="@layout/fragment_bookmark" />
+    <fragment
+        android:id="@+id/navigation_mypage"
+        android:name="com.example.kukathon.MypageFragment"
+        android:label="fragment_mypage"
+        tools:layout="@layout/fragment_mypage" />
 </navigation>
