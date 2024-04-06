@@ -4,13 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.kukathon.databinding.ActivitySplashBinding
+import com.kakao.sdk.common.KakaoSdk
 
 class SplashActivity : AppCompatActivity() {
 
@@ -23,6 +19,8 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         val handler = Handler(Looper.getMainLooper())
+
+        KakaoSdk.init(this, "{NATIVE_APP_KEY}")
 
         handler.postDelayed({
             val intent = Intent(this, MainActivity::class.java)
